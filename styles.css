@@ -1,53 +1,116 @@
-*{
-  flex:1
+* {
+  box-sizing: border-box;
 }
 
-body{
-display: flex;
-
+body {
+  display: flex;
+  max-height: 98vh;
+  /* border: 3px solid; */
 }
-.input{
+
+#right-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20vh 5vw;
+}
+
+form {
   display: flex;
   flex-direction: column;
 }
+form input {
+  display: flex;
+}
+#form-container {
+  flex-direction: column;
+  display: flex;
+  gap: 5vh;
+}
 
-input:invalid{
+#form-container > * {
+  gap: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: flex-start;
+}
+
+input:invalid {
   border-color: red;
 }
 
-input:valid{
+input:valid {
   border-color: green;
 }
-#form-container{
-  border: 3px solid;
-  display: flex;
-  gap:10px;
-
-}
-#right-container{
-  flex:2
-}
-#left-container{
-  background-color: aqua;
-
-}
-#left-form{
-  position: relative;
-}
-#password-confirmation-container
-{display: flex;
-  position:fixed;
-  bottom: 30px;
-
+input {
+  min-height: 5vh;
 }
 
-form{
+#left-container {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 3px solid red; */
+  width: 30%;
+
+  /* height: 100%; */
 }
-#left-form{
-  border: 3px solid yellow;
 
+#logo-container {
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  margin-top: 20vh;
+  max-height: 10vh;
+  width: 100%;
+  padding: 0 10vh;
 
+  background-color: rgba(13, 44, 71, 70%);
+}
+#logo-text {
+  color: white;
+}
+#logo-image {
+  flex-grow: 0;
+  height: 8vh;
+}
+#logo-container > h1 {
+  flex: 0;
+}
+#author-rights {
+  /* margin-bottom: auto; */
+  flex: 0;
+  background-color: rgba(240, 255, 255, 30%);
+  color: white;
+}
+/* Reset some default button styles */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+#account > button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  background-color: #596d48; /* Default background color */
+  color: #ffffff; /* Default text color */
 }

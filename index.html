@@ -10,7 +10,7 @@
 
 <body>
   <div id="left-container">
-    <div id="logo-conainer">
+    <div id="logo-container">
       <img id="logo-image" alt="logo-image"
         src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
       <h1 id="logo-text">ODIN</h1>
@@ -45,40 +45,42 @@
             <input id="last-name">
           </div>
         </div>
+        <div id="contact">
+          <div class="input">
+            <label for="email">Email</label>
 
-
-          <div id="contact">
-            <div class="input">
-              <label for="email">Email</label>
-
-              <input id="email" type="email" required>
-            </div>
-            <div class="input">
+            <input id="email" type="email" required>
+          </div>
+          <div class="input">
             <label for="phone">Phone Number</label>
 
             <input id="phone">
           </div>
-          <div id="password-container">
-            <div class="input">
-              <label for="password">Password:<p>The password must contain at least one uppercase letter, one digit and
-                  must have minimum 8characters</p></label>
-  
-              <input id="password" minlength="8" pattern="(?=.*[A-Z])(?=.*\d)[\w]*">
-            </div>
-          </div>
-  
-            <div class="input" id="password-confirmation-container">
-              <label for="password-confirmation">Confirm Password</label>
-  
-              <input id="password-confirmation">
-            </div>
+
         </div>
-</div>
+        <div id="password-container">
 
+          <div class="input">
+            <label for="password">Password:</label>
 
+            <input id="password" minlength="8" pattern="(?=.*[A-Z])(?=.*\d)[\w]*">
+            <p>The password must contain at least one uppercase letter, one digit and
+              must have minimum 8characters</p>
+          </div>
+          <div class="input" id="password-confirmation-container">
+            <label for="password-confirmation">Confirm Password</label>
 
+            <input id="password-confirmation">
+          </div>
+        </div>
+      </div>
 
     </form>
+    <div id="account">
+      <button type="button">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+
+    </div>
 
 
 
