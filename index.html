@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Odin Form Project</title>
+</head>
+
+<body>
+  <div id="left-container">
+    <div id="logo-conainer">
+      <img id="logo-image" alt="logo-image"
+        src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+      <h1 id="logo-text">ODIN</h1>
+    </div>
+    <div id="author-rights">Photo de <a
+        href="https://unsplash.com/fr/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie
+        West</a> sur <a
+        href="https://unsplash.com/fr/photos/plante-a-feuilles-vertes-en-photographie-en-gros-plan-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </div>
+  </div>
+  <div id="right-container">
+    <div id="text">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams.
+        <br>
+        Sign up now to get started
+      </p>
+      <p>You know you want to</p>
+    </div>
+    <form>
+      <legend>Let's do this</legend>
+      <div id="form-container">
+        <div id="name">
+          <div class="input">
+            <label for="first-name">First Name</label>
+
+            <input id="first-name">
+          </div>
+          <div class="input">
+            <label for="last-name">Last Name</label>
+
+            <input id="last-name">
+          </div>
+        </div>
+
+
+          <div id="contact">
+            <div class="input">
+              <label for="email">Email</label>
+
+              <input id="email" type="email" required>
+            </div>
+            <div class="input">
+            <label for="phone">Phone Number</label>
+
+            <input id="phone">
+          </div>
+          <div id="password-container">
+            <div class="input">
+              <label for="password">Password:<p>The password must contain at least one uppercase letter, one digit and
+                  must have minimum 8characters</p></label>
+  
+              <input id="password" minlength="8" pattern="(?=.*[A-Z])(?=.*\d)[\w]*">
+            </div>
+          </div>
+  
+            <div class="input" id="password-confirmation-container">
+              <label for="password-confirmation">Confirm Password</label>
+  
+              <input id="password-confirmation">
+            </div>
+        </div>
+</div>
+
+
+
+
+    </form>
+
+
+
+  </div>
+
+</body>
+
+</html>
